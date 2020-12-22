@@ -39,8 +39,8 @@ class Print_Data implements ActionListener{
  
         f=new JFrame("Print Data");
         f.setVisible(true);
-        f.setSize(595,642);
-        f.setLocation(450,200);
+        f.setSize(500,542);
+        f.setLocation(450,100);
         f.setBackground(Color.white);
         f.setLayout(null);
 
