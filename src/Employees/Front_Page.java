@@ -17,11 +17,11 @@ class Front_Page implements ActionListener{
         f.setLayout(null);
         
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("Employeee/icons/front.jpg"));
-        Image i2 = i1.getImage().getScaledInstance(1200,700,Image.SCALE_DEFAULT);
+        Image i2 = i1.getImage().getScaledInstance(1000,500,Image.SCALE_DEFAULT);
         ImageIcon i3 = new ImageIcon(i2);
         JLabel l1 = new JLabel(i3);
         
-        l1.setBounds(0,150,1360,530);
+        l1.setBounds(0,150,1160,430);
         f.add(l1);
 
 
@@ -30,7 +30,7 @@ class Front_Page implements ActionListener{
         b.setForeground(Color.WHITE);
         
 
-        b.setBounds(500,600,300,70);
+        b.setBounds(500,400,200,70);
         b.addActionListener(this);
 
         id=new JLabel();
@@ -40,9 +40,9 @@ class Front_Page implements ActionListener{
    
 
         JLabel lid=new JLabel("EMPLOYEE MANAGEMENT SYSTEM");
-        lid.setBounds(80,30,1500,100);
-        lid.setFont(new Font("serif",Font.PLAIN,70));
-        lid.setForeground(Color.red);
+        lid.setBounds(80,30,1300,70);
+        lid.setFont(new Font("serif",Font.PLAIN,50));
+        lid.setForeground(Color.BLUE);
         id.add(lid);
 
         id.add(b);
@@ -52,7 +52,7 @@ class Front_Page implements ActionListener{
         f.getContentPane().setBackground(Color.WHITE);
 
         f.setVisible(true);
-        f.setSize(1360,750);
+        f.setSize(1160,550);
         f.setLocation(200,100);
 
         while(true){
